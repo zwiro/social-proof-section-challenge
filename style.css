@@ -1,0 +1,201 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom 0px right 10px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    min-width: 20rem;
+}
+
+main {
+    min-height: 90vh;
+    margin: 5rem 2.25rem 1rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    line-height: 0.8;
+    padding: 0 2rem;
+}
+
+.description p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.25;
+    padding: 1.5rem 0;
+    letter-spacing: -1px;
+}
+
+.stars {
+    padding-bottom: 1rem;
+}
+
+.rating {
+    background-color: hsl(300, 24%, 96%);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+h2 {
+    color: hsl(300, 43%, 22%);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.rating img {
+    padding: 1rem 0.15rem 0 0.15rem;
+}
+
+.opinions {
+    text-align: start;
+}
+
+.opinion-card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    color: hsl(300, 24%, 96%);
+    quotes: "“""”";
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.opinion-card img {
+    border-radius: 50%;
+    height: 2.5rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    color: hsl(333, 80%, 67%);
+    padding: 0.25rem 0;
+}
+
+.opinion-card p {
+    line-height: 1.5;
+    padding-top: 1rem 0;
+}
+
+.opinion-card:hover {
+    transform: scale(1.1);
+    background-color: hsl(300, 43%, 30%);
+}
+
+.rating:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 8px 9px 12px rgba(66, 68, 90, 1)
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom 0px right 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 15rem;
+        grid-template-areas: 'desc stars'
+            'opinions opinions';
+        text-align: start;
+        place-content: center;
+        margin: 1rem 10rem 0 10rem;
+    }
+
+    .description {
+        grid-area: desc;
+        padding-right: 8rem;
+    }
+
+    .description p {
+        letter-spacing: normal;
+    }
+
+    .stars {
+        grid-area: stars;
+    }
+
+    .opinions {
+        grid-area: opinions;
+    }
+
+    h1 {
+        padding: 0;
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+    }
+
+    .rating {
+        display: flex;
+        align-items: center;
+        padding: 0.25rem 2rem;
+        width: 28rem;
+    }
+
+    .rating img {
+        padding: 0 0.25rem;
+    }
+
+    .rating-2 {
+        margin-left: 3.5rem;
+    }
+
+    .rating-3 {
+        margin-left: 7rem;
+    }
+
+    .opinions {
+        height: 19rem;
+        display: flex;
+        gap: 2.15rem;
+        font-size: 1.06rem;
+    }
+
+    .opinion-card {
+        height: 16rem;
+    }
+
+    .opinion-card p {
+        padding-top: 1rem;
+    }
+
+    .card-2 {
+        align-self: center;
+    }
+
+    .card-3 {
+        align-self: flex-end;
+    }
+
+    .attribution {
+        margin-top: 2.5rem;
+    }
+
+}
