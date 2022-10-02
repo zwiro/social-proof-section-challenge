@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-proof-section-flexbox-and-grid-x3JomjLIn_)
+- Live Site URL: [Live Site](https://zwiro.github.io/social-proof-section-challenge/)
 
 ## My process
 
